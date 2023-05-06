@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SecDawgs Blog - Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style sheet/main.css">
+	<link rel="stylesheet" type="text/css" href="Style sheet/main.csss">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>SecDawgs</h1>
+			<a href="index.html"><img src="Images/logo.jpg" alt="Logo"></a>
+			<nav>
+				<nav id="nav-wrapper">
+					<ul id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About</a></li>
+					<li><a href="News.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="showcase">
+		<div class="container">
+			<h1>Welcome to SecDawgs Blog</h1>
+			<p>This is SIU cybersecurity Club and competition team. This Blog is designed for us to have a place to share our stories along with experiences.</p>
+	</section>
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="Images/HIveStorm.jpg" alt="Image">
+				<h3>Blog Post 1</h3>
+				<p>Security Dawgs Compete in HiveStorm. HiveStorm is a cybersecurity competition where you are handed a valunrable machine and you are in charge of cleaning it up.</p>
+			</div>
+			<div class="box">
+				<img src="Images/Team_pic.jpg" alt="Image">
+				<h3>Blog Post 2</h3>
+				<p>The Security Dawgs recently competed in the Midwest CCDC competition and came in third place. The team members worked tirelessly to defend their network against simulated cyber attacks launched by a team of expert attackers. Their dedication and expertise in the field of cybersecurity were on full display as they demonstrated their ability to detect and respond to a wide range of threats. Despite fierce competition from other teams, the Security Dawgs were able to demonstrate their proficiency and secure a well-deserved third-place finish.</p>
+			</div>
+			<div class="box">
+				<img src="Images/Regionals.jpeg" alt="Image">
+				<h3>Blog Post 3</h3>
+				<p>
+					Congratulations to the Security Dawgs team for their impressive performance at the Midwest CCDC regional competition, where they placed third overall! Their hard work and dedication to cybersecurity have paid off, and they have proven themselves to be skilled defenders in a challenging and competitive environment. This accomplishment is a testament to their knowledge, teamwork, and ability to adapt to real-world scenarios. We are proud of their achievement and wish them continued success in their future endeavors.</p>
+			</div>
+		</div>
+	</section>
+	<audio controls>
+		<source src="audio_file.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+  </audio>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="SlickNav-master/jquery.slicknav.js">
+	</script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+</body>
+</html>

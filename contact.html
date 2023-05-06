@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style sheet/main.css">
+	<link rel="stylesheet" type="text/css" href="Style sheet/slicknav.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+	<style>
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+		<a href="index.html"><img src="Images/logo.jpg" alt="Logo"></a>
+		<nav id="nav-wrapper">
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About</a></li>
+				<li><a href="News.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form action="confirmation.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p>You can also contact us via Discord:</p>
+	<a href="https://discord.gg/Z3Mc6rzc">Join Our Discord Server</a>
+	
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="style sheet/jquery.slicknav.js"></script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+</body>
+</html>

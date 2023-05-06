@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SecDawgs Blog - Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style sheet/main.css">
+  	<link rel="stylesheet" type="text/css" href="Style sheet/slicknav.css">
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>SecDawgs</h1>
+			<a href="index.html"><img src="Images/logo.jpg" alt="Logo"></a>
+			<nav>
+				<nav id="nav-wrapper">
+					<ul id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About</a></li>
+					<li><a href="News.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</nav>
+    </header>
+    <main>
+      <article>
+        <h3>Major Vulnerability Found in Popular Web Application Framework</h3>
+        <p>Security researchers have discovered a major vulnerability in the popular web application framework XPress. This vulnerability allows attackers to execute arbitrary code on web servers running XPress, potentially leading to a complete compromise of the server and any data stored on it.</p>
+        <p>The XPress development team has released a patch to address the vulnerability, and users are urged to update their installations as soon as possible.</p>
+        <p>If you're running a web server using XPress, make sure to check for updates and apply the patch immediately to avoid being vulnerable to this attack.</p>
+        <p>Stay tuned to SecDawgs for updates on the latest security news and vulnerabilities.</p>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2023 SecDawgs</p>
+    </footer>
+  </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="Style sheet/jquery.slicknav.js">
+	</script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>

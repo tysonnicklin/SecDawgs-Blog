@@ -1,0 +1,182 @@
+/* 
+    Author: Tyson Nicklin
+    Date: 2023-02-17
+*/
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+}
+body {
+  text-align: left;
+}
+header, #showcase, #boxes {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+body {
+  color: white;
+  width: 725px;
+  background-color: #720000; 
+  margin: 10px auto;
+  font-family: 'Open Sans', sans-serif;
+  } 
+
+
+
+.picture .rollimg {
+display: none;
+border: solid black;
+  border-radius: 2.5%;
+  position: absolute;
+top: 15px;
+left: 2.5%;
+width: 40%;
+}
+
+.picture:hover .rollimg {
+display: inline;
+}
+
+figcaption {
+color: black;
+font-style: italic;
+padding: 2px;
+font-size: .75em;
+text-align: center;
+width: 23%;
+} 
+
+.video {
+  position: relative;
+   left: 2.5%;
+   top: 15px;
+   width: 40%;
+}
+
+@media (max-width: 470px) {
+  table {
+    font-size: 0.8rem;
+  }
+  table th, table td {
+    padding: 0.3rem;
+  }
+}
+
+.checkout-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 10px;
+	cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #720000;
+}
+@media (max-width: 767px) {
+  .box {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
+
+@font-face {
+  font-family: 'MyAdobeFont';
+  src: url('path/to/font.woff2') format('woff2'),
+       url('path/to/font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyAdobeFont', sans-serif;
+}
+
+@media print {
+  body {
+      font-size: 12pt;
+      line-height: 1.5;
+  }
+  h1, h2, h3 {
+      page-break-after: avoid;
+  }
+  a {
+      color: black !important;
+      text-decoration: underline !important;
+  }
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+header a img {
+  display: inline-block;
+  height: 80px; /* adjust as needed */
+  margin-right: 0px; /* add some spacing */
+}
+.box img {
+  max-width: 100%;
+}
